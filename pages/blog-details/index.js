@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../components/_App/Navbar";
-import PageBanner from "../components/Common/PageBanner";
+import Navbar from "../../components/_App/Navbar";
+import PageBanner from "../../components/Common/PageBanner";
 import Link from "next/link";
-import Footer from "../components/_App/Footer";
+import Footer from "../../components/_App/Footer";
 
 const BlogGrid = () => {
   return (

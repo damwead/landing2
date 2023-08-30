@@ -1,29 +1,29 @@
 import React from "react";
-import Navbar from "../components/_App/Navbar";
-import PageBanner from "../components/Common/PageBanner";
-import BlogTwoColumns from "../components/Blog/BlogTwoColumns";
-import BlogSidebar from "../components/Blog/BlogSidebar";
-import Footer from "../components/_App/Footer";
+import Navbar from "../../components/_App/Navbar";
+import PageBanner from "../../components/Common/PageBanner";
+import BlogDetailsContent from "../../components/Blog/BlogDetailsContent";
+import BlogSidebar from "../../components/Blog/BlogSidebar";
+import Footer from "../../components/_App/Footer";
 
-const BlogRightSidebar = () => {
+const BlogDetails = () => {
   return (
     <>
       <Navbar />
 
       <PageBanner
-        pageTitle="Blog Right Sidebar"
+        pageTitle="Blog Details"
         homePageUrl="/"
         homePageText="Home"
-        activePageText="Blog Right Sidebar"
-        imgClass="bg-8"
+        activePageText="Blog Details"
+        imgClass="bg-5"
       />
 
       <div className="blog-details-area ptb-100">
         <div className="container">
           <div className="row">
             <div className="col-lg-8">
-              {/* BlogTwoColumns */}
-              <BlogTwoColumns />
+              {/* BlogDetailsContent */}
+              <BlogDetailsContent />
             </div>
 
             <div className="col-lg-4">
@@ -41,4 +41,4 @@ const BlogRightSidebar = () => {
   );
 };
 
-export default BlogRightSidebar;
+export default BlogDetails;

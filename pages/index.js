@@ -30,19 +30,7 @@ const Index = () => {
 
       <VideoCreated />
 
-      {/* <WhatWeDo /> */}
-
-      {/* <Testimonials /> */}
-
-      {/* <AwardWinningMovies /> */}
-
-      {/* <GetInTouch /> */}
-
       <UpcomingMovies />
-
-      {/* <ExclusiveShop products={products.slice(0, 4)} /> */}
-
-      {/* <TeamStyleOne /> */}
 
       <Partners />
 

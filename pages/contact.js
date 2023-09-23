@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/_App/Navbar";
 import PageBanner from "../components/Common/PageBanner";
 import GoogleMap from "../components/Contact/GoogleMap";
-import ContactForm from "../components/Contact/ContactForm";
+// import ContactForm from "../components/Contact/ContactForm";
 import Footer from "../components/_App/Footer";
 
 const Contact = () => {
@@ -20,7 +20,7 @@ const Contact = () => {
 
       <GoogleMap />
 
-      <ContactForm />
+      {/* <ContactForm /> */}
 
       <Footer />
     </>

@@ -24,14 +24,10 @@ export default function MyAccountForm() {
 							{user ? !username ? <UsernameForm /> : <SignOutButton /> : <SignInButton />}
 						</div>
 
-						<div className="col-lg-6">
-							<LoginForm />
-						</div>
+					</div>
 
-						{/* <div className="col-lg-6">
-							<RegisterForm />
-						</div> */}
-
+          <div className="col-lg-6">
+						<LoginForm />
 					</div>
 
 				</div>

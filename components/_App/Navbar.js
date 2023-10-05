@@ -127,7 +127,7 @@ const Navbar = () => {
                       <li className="nav-item">
                         <Link href="/my-account/"
                         className={`nav-link ${currentPath == "/my-account/" && "active"}`}>
-                          Sing out
+                          My Account
                         </Link>
                       </li>
 

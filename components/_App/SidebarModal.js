@@ -1,10 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import { useSelector, useDispatch } from "react-redux";
+import { useContext } from "react";
+
+import { UserContext } from '../../lib/context';
 
 const SidebarModal = () => {
   const dispatch = useDispatch();
   const sidebarModal = useSelector((state) => state.sidebarModalState);
+
+  const { user, username } = useContext(UserContext);
 
   // Sidebar Modal
   const toggleSidebarModal = () => {
@@ -30,6 +35,8 @@ const SidebarModal = () => {
             <i className="bx bx-x"></i>
           </span>
         </div>
+
+        {user ? <SignOutButton /> :  <SignInButton />}
 
         <div className="sidebar-about">
           <div className="title">
@@ -133,3 +140,14 @@ const SidebarModal = () => {
 };
 
 export default SidebarModal;
+
+
+// Sign in with Google button
+function SignInButton() {
+  return <Link href="/my-account/" className={``}>My Account</Link>
+}
+
+// Sign out button
+function SignOutButton() {
+  return <button onClick={() => auth.signOut()}>Sign Out</button>;
+}
